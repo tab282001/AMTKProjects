@@ -6,7 +6,7 @@ public class FirstNonRepeat {
     public Character firstNon ( String input ){
         char[] chars = input.toCharArray();
         Queue<Character> queue = new LinkedList<>();
-        HashMap<Character, Integer> map = new HashMap();
+        HashMap<Character, Integer> map = new HashMap<>();
         for (char c:chars ) {
             if(map.containsKey(c))
                 map.put(c,map.get(c)+1);

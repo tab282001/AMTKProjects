@@ -7,11 +7,11 @@ public class StringReverse {
     }
     public static String reverseStr( String input)
     {
-        String rev="";
+        StringBuilder rev= new StringBuilder();
         for (int i=input.length()-1; i>=0;i-- ) {
-            rev = rev + input.charAt(i);
+            rev.append(input.charAt(i));
         }
-        return rev;
+        return rev.toString();
     }
 }
 

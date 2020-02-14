@@ -15,8 +15,8 @@ class StringReverseClass{
         char[] charArray= input.toCharArray();
         for (int c=charArray.length-1; c>=0;c-- )
          {
-            rev = rev.append(charArray[c]);
-        }
+             rev.append(charArray[c]);
+         }
 
         return rev.toString();
     }
@@ -33,8 +33,7 @@ class StringReverseClassNoExtraSpace{
             charArray[i] = charArray[len-1-i];
             charArray[len-1-i] = temp;
         }
-        String output = new String(charArray);
-        return output;
+        return new String(charArray);
     }
 }
 
